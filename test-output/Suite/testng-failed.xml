@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.tiatros.report.ExtentReportListner"/>
+  </listeners>
+  <test thread-count="5" name="Tiatros(failed)">
+    <groups>
+      <run>
+        <include name="END-END"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qa.tiatros.testcase.DashboardTest">
+        <methods>
+          <include name="dashboard_Click_All"/>
+        </methods>
+      </class> <!-- com.qa.tiatros.testcase.DashboardTest -->
+    </classes>
+  </test> <!-- Tiatros(failed) -->
+</suite> <!-- Failed suite [Suite] -->

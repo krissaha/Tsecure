@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Tiatros]">
+  <listeners>
+    <listener class-name="com.qa.tiatros.report.ExtentReportListner"/>
+    <listener class-name="com.qa.tiatros.util.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="SignIn(failed)">
+    <classes>
+      <class name="com.qa.tiatros.signIn.testcase.TC012">
+        <methods>
+          <include name="initobjects"/>
+          <include name="tearDown"/>
+          <include name="tc012_signIN"/>
+        </methods>
+      </class> <!-- com.qa.tiatros.signIn.testcase.TC012 -->
+      <class name="com.qa.tiatros.signIn.testcase.TC011">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tc011_signIN"/>
+          <include name="initobjects"/>
+        </methods>
+      </class> <!-- com.qa.tiatros.signIn.testcase.TC011 -->
+    </classes>
+  </test> <!-- SignIn(failed) -->
+</suite> <!-- Failed suite [Tiatros] -->
