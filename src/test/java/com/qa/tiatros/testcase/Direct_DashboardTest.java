@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -69,7 +71,7 @@ public class Direct_DashboardTest extends TestBase {
 	}
 
 	@Test(enabled = false) // This test will click on the NPS scale
-	public void scale_select() throws Exception {
+	public void scale_select() throws Throwable {
 		sgn.verify_text12();
 		d = sgn.signin();
 		d.scale_click();
@@ -156,6 +158,7 @@ Throwable
 		uf.user_facts_details();
 	}
 	
+
 	@AfterMethod
 	public void tearDown() // This AfterMethod will run every time after any @Test
 	{

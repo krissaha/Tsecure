@@ -96,6 +96,7 @@ public class SigninPage extends TestBase {
 		return new DashboardPage();
 	}
 
+	
 	public CourseDashboardPage signin_Course() throws Exception {
 		UtilTest.sendkeys(driver, email, prop.getProperty("Email"));
 		UtilTest.sendkeys(driver, pass, prop.getProperty("Password"));

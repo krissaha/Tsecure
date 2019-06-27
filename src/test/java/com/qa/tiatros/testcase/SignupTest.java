@@ -1,6 +1,8 @@
 package com.qa.tiatros.testcase;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
@@ -65,6 +67,7 @@ public class SignupTest extends TestBase
 		sp.verify_text2();
 		sp.verify_text3();
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {

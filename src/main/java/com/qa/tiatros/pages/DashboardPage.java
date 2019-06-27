@@ -12,7 +12,7 @@ public class DashboardPage extends TestBase {
 	
 	// Page factory - OR
 
-	@FindBy(xpath = "//h2[contains(text(),'Dashboard')]")
+	@FindBy(xpath = "//strong[@class='hidden-xs-cbt' and contains(text(),'Dashboard')]")
 	WebElement verification_text7;
 	
 	@FindBy(xpath = "//h3[contains(text(),'Inventory Your Stress')]")
@@ -63,6 +63,11 @@ public class DashboardPage extends TestBase {
 	@FindBy(xpath = "//div[@class='modal-content']/div/h3[contains(text(),'Take Your Stress Inventory')]" )
 	WebElement verification_text17;
 
+	@FindBy(xpath = "//input[@value='SUBMIT']")
+	WebElement submit;
+	
+	@FindBy(xpath = "//textarea[@id='nps_score_comment']")
+	WebElement nps_textarea;
 	
 	
 	// Initializing the page object
@@ -145,11 +150,14 @@ public class DashboardPage extends TestBase {
 		return new User_factsPage();
 	}
 	
-	public void scale_click() throws Exception
+	public void scale_click() throws Throwable
 	{
 		Thread.sleep(5000);
 		//UtilTest.element_click(driver, scale_click);
 		scale_click.click();
+		UtilTest.sendkeys(driver, nps_textarea, UtilTest.readExcel("SignUP", prop.getProperty("TestCase"), "PledgeName"));
+		submit.click();
+		Thread.sleep(3000);	
 		//UtilTest.element_click(driver, cancel);
 		Thread.sleep(4000);	
 	}
@@ -165,5 +173,13 @@ public class DashboardPage extends TestBase {
 		Thread.sleep(2000);	
 		UtilTest.element_click(driver, why_stress);
 		Thread.sleep(3000);		
+	}
+	
+	public void logoutM() throws Throwable
+	{
+		UtilTest.click_hambergur();
+		Thread.sleep(2000);
+		UtilTest.logout();
+		Thread.sleep(2000);
 	}
 }

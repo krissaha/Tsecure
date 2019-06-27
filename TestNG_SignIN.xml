@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SignIN">
+
+	<listeners>
+		<listener
+			class-name="com.qa.tiatros.report.ExtentReportListner" />
+	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="com.qa.tiatros.signIn.testcase.TC009">
 				<methods>
-					<exclude name="tc009_signIN" />
+					<include name="tc009_signIN" />
 				</methods>
 			</class>
 			<class name="com.qa.tiatros.signIn.testcase.TC008">
 				<methods>
-					<exclude name="tc008_signIN" />
+					<include name="tc008_signIN" />
 				</methods>
 			</class>
 			<class name="com.qa.tiatros.signIn.testcase.TC007">
 				<methods>
-					<exclude name="tc007_signIN" />
+					<include name="tc007_signIN" />
 				</methods>
 			</class>
 			<class name="com.qa.tiatros.signIn.testcase.TC006">
@@ -45,22 +50,22 @@
 			</class>
 			<class name="com.qa.tiatros.signIn.testcase.TC002">
 				<methods>
-					<exclude name="tc002_signIN" />
+					<include name="tc002_signIN" />
 				</methods>
 			</class>
 			<class name="com.qa.tiatros.signIn.testcase.TC012">
 				<methods>
-					<exclude name="tc012_signIN" />
+					<include name="tc012_signIN" />
 				</methods>
 			</class>
 			<class name="com.qa.tiatros.signIn.testcase.TC011">
 				<methods>
-					<exclude name="tc011_signIN" />
+					<include name="tc011_signIN" />
 				</methods>
 			</class>
 			<class name="com.qa.tiatros.signIn.testcase.TC010">
 				<methods>
-					<exclude name="tc010_signIN" />
+					<include name="tc010_signIN" />
 				</methods>
 			</class>
 		</classes>

@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -55,6 +57,7 @@ public class TC004 extends TestBase {
 
 	// This AfterMethod will run every time after any @Test
 
+	
 	
 	
 	@AfterMethod

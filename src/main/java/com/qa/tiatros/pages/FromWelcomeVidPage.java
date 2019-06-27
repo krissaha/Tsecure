@@ -30,8 +30,11 @@ public class FromWelcomeVidPage extends TestBase {
 	@FindBy(id = "submit_profile")
 	WebElement submit_profile;
 
-//	@FindBy(xpath = "//ins[@class='iCheck-helper']")
-//	WebElement checkBox;
+	@FindBy(xpath = "//span[@class='switchery switchery-default']")
+	WebElement mobile;
+	
+	@FindBy(xpath = "//input[@id='phone']")
+	WebElement phnNumber;
 
 	@FindBy(xpath = "//h2[contains(text(),'Complete Your Profile')]")
 	WebElement verification_text6;
@@ -71,4 +74,23 @@ public class FromWelcomeVidPage extends TestBase {
 		Thread.sleep(5000);
 		return new DashboardPage();
 	}
+	
+	public DashboardPage inputProfileDetails_PhoneNumber() throws Throwable {
+
+		UtilTest.sendkeys(driver, zip, UtilTest.readExcel("SignUP", prop.getProperty("TestCase"), "Zip")); // prop.getProperty("Zip")
+		UtilTest.select_dropdown(month, UtilTest.readExcel("SignUP", prop.getProperty("TestCase"), "Month")); // prop.getProperty("Month")
+		UtilTest.select_dropdown(day, UtilTest.readExcel("SignUP", prop.getProperty("TestCase"), "Day")); // prop.getProperty("Day")
+		UtilTest.select_dropdown(year, UtilTest.readExcel("SignUP", prop.getProperty("TestCase"), "Year"));
+		UtilTest.select_dropdown(gender, UtilTest.readExcel("SignUP", prop.getProperty("TestCase"), "Gender"));
+		Thread.sleep(1000);
+		UtilTest.element_click(driver, mobile);
+		Thread.sleep(1000);
+		UtilTest.element_click(driver, check_box);
+		Thread.sleep(2000);
+		UtilTest.element_click(driver, save);
+		Thread.sleep(5000);
+		return new DashboardPage();
+		
+	}
+	
 }

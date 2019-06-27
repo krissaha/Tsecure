@@ -16,6 +16,7 @@ C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\Commo
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\SigninPage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\ProfilePage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\util\CustomListener.java
+C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\Message_post_commentsPage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\FromWelcomeVidPage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\DashboardPage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\Course_Sessions_page.java
@@ -24,6 +25,7 @@ C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\Pss10
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\UnlockPage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\Phq9Page.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\FinalExercise_T_Page.java
+C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\MessagePostPage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\base\TestBase.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\PeerReviewPage.java
 C:\Users\DELL\eclipse-workspace\Tiatros\src\main\java\com\qa\tiatros\pages\Gad7Page.java

@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -38,7 +40,6 @@ public class TC003 extends TestBase{
 			sp = new SignupPage();
 			sgn = new SigninPage();
 			pass = new PasswordPage();
-
 		}
 
 		// Method:- Click on the forget password link and press the back button to check the UI design 
@@ -53,6 +54,7 @@ public class TC003 extends TestBase{
 		}
 		
 		// This AfterMethod will run every time after any @Test
+		
 		
 		@AfterMethod
 		public void tearDown() 

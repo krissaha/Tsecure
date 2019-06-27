@@ -5,14 +5,8 @@ package com.qa.tiatros.signIn.testcase;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
 import com.qa.tiatros.base.TestBase;
 import com.qa.tiatros.pages.PasswordPage;
 import com.qa.tiatros.pages.SigninPage;
@@ -54,6 +48,7 @@ public class TC001 extends TestBase {
 	
 	// This AfterMethod will run every time after any @Test
 
+	
 	
 	@AfterMethod
 	public void tearDown() 

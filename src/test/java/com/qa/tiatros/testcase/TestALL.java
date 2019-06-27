@@ -8,6 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import com.qa.tiatros.pages.CommonPage;
 
 import java.util.List;
@@ -79,6 +81,7 @@ public class TestALL {
 		driver.findElement(By.xpath("//span[@class=\"nav-label text-danger\"]")).click();
 	}
 
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

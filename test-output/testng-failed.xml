@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tiatros.testcase.DataProviderRegistration">
+      <class name="com.qa.tiatros.testcase.DashboardTest">
         <methods>
+          <include name="dashboard_Click_All"/>
           <include name="initobjects"/>
-          <include name="teardown"/>
-          <include name="readDataFromExcel"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.tiatros.testcase.DataProviderRegistration -->
+      </class> <!-- com.qa.tiatros.testcase.DashboardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -52,5 +52,4 @@ public class ReturnUserRegistrationPage extends TestBase {
 		UtilTest.element_click(driver, save);
 		return new DashboardPage();
 	}
-
 }

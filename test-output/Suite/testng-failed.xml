@@ -4,18 +4,15 @@
   <listeners>
     <listener class-name="com.qa.tiatros.report.ExtentReportListner"/>
   </listeners>
-  <test thread-count="5" name="Tiatros(failed)">
-    <groups>
-      <run>
-        <include name="END-END"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.tiatros.testcase.DashboardTest">
+      <class name="com.qa.tiatros.messaging.testcase.TC001">
         <methods>
-          <include name="dashboard_Click_All"/>
+          <include name="addNewMessage"/>
+          <include name="tearDown"/>
+          <include name="initobjects"/>
         </methods>
-      </class> <!-- com.qa.tiatros.testcase.DashboardTest -->
+      </class> <!-- com.qa.tiatros.messaging.testcase.TC001 -->
     </classes>
-  </test> <!-- Tiatros(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -25,13 +25,13 @@ public class CommonPage extends TestBase {
 
 		// Take the count of number of Questions in the current page 
 		int total_Questions = driver
-				.findElements(By.xpath("(//div[@class='panel panel-success'])[1]//div[@class='vote-item pcl-item']"))
+				.findElements(By.xpath("(//div[@class='panel panel-success'])[1]//div[@class='vote-item pcl-item option-check']"))
 				.size();
 
 		// Take the count of number of Answers
 		int total_Answers = driver
 				.findElements(By.xpath(
-						"(//div[@class='panel panel-success'])[1]//div[@class='vote-item pcl-item'][1]/div/div/div"))
+						"(//div[@class='panel panel-success'])[1]//div[@class='vote-item pcl-item option-check'][1]/div/div/div"))
 				.size();
 
 		// creating object for Random Class
@@ -41,7 +41,7 @@ public class CommonPage extends TestBase {
 		for (int q = 1; q <= total_Questions; q++) {
 			// Generating Random answers
 			int to_click = rand.nextInt((total_Answers - 1) + 1) + 1;
-			driver.findElement(By.xpath("(//div[@class='panel panel-success'])[1]//div[@class='vote-item pcl-item']["
+			driver.findElement(By.xpath("(//div[@class='panel panel-success'])[1]//div[@class='vote-item pcl-item option-check']["
 					+ q + "]/div/div/div[" + to_click + "]//ins")).click();
 
 		}
